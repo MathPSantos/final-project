@@ -1,4 +1,5 @@
 import { ActiveLink } from "./ActiveLink";
+import { LoginButton } from "../LoginButton";
 
 import styles from "./styles.module.scss";
 
@@ -21,6 +22,8 @@ export function Navbar() {
             <a>contato</a>
           </ActiveLink>
         </nav>
+
+        <LoginButton />
       </div>
     </header>
   );
