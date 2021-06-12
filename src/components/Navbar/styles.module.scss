@@ -1,0 +1,48 @@
+.headerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 5rem;
+}
+
+.headerContent {
+  max-width: 1160px;
+  height: 5rem;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 1.5rem;
+  }
+
+  nav {
+    margin-left: 3.5rem;
+
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 1.25rem;
+      font-weight: 700;
+
+      color: var(--gray-600);
+
+      transition: all 0.2s;
+
+      & + a {
+        margin-left: 1.5rem;
+      }
+
+      &.active, &:hover {
+        color: var(--purple-900);
+      }
+    }
+  }
+}
+
