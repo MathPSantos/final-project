@@ -4,13 +4,13 @@ import { FiArrowRight } from "react-icons/fi";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-import styles from "./home.module.scss";
+import styles from "../styles/pages/home.module.scss";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Final project</title>
+        <title>indica.</title>
       </Head>
 
       <Navbar />
