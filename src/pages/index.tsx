@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
 import { Navbar } from "../components/Navbar";
@@ -27,10 +28,12 @@ export default function Home() {
                 nossos curadores irão indicar conteúdos para resolver seus
                 problemas!
               </p>
-              <Button
-                label="cadastre-se"
-                icons={[<FiArrowRight />, <FiArrowRight />]}
-              />
+              <Link href="/signUp">
+                <Button
+                  icons={[<FiArrowRight />, <FiArrowRight />]}
+                  label="cadastre-se"
+                />
+              </Link>
             </div>
           </div>
         </section>
@@ -80,10 +83,12 @@ export default function Home() {
               Inicie o seu cadastro e vamos juntos gerar mudança na sua vida
               profissional!
             </p>
-            <Button
-              label="cadastre-se"
-              icons={[<FiArrowRight />, <FiArrowRight />]}
-            />
+            <Link href="/signUp">
+              <Button
+                icons={[<FiArrowRight />, <FiArrowRight />]}
+                label="cadastre-se"
+              />
+            </Link>
           </div>
         </section>
       </main>
