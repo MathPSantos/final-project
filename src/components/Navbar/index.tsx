@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ActiveLink } from "./ActiveLink";
 import { LoginButton } from "../LoginButton";
 
@@ -7,7 +9,9 @@ export function Navbar() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src="/assets/logo.svg" alt="indica" />
+        <Link href="/">
+          <img src="/assets/logo.svg" alt="indica" />
+        </Link>
 
         <nav>
           <ActiveLink activeClassName={styles.active} href="/">

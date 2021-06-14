@@ -13,7 +13,9 @@ function Login() {
 
       <main className={styles.login}>
         <div className={styles.loginContent}>
-          <img src="/assets/logo.svg" alt="indica." />
+          <Link href="/">
+            <img src="/assets/logo.svg" alt="indica." />
+          </Link>
 
           <h1>Login</h1>
           <p>Feliz em te ver aqui! Preencha seus dados e bora lá!</p>
