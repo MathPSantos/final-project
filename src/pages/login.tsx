@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { FiCheck, FiArrowRight } from "react-icons/fi";
 
+import { Button } from "../components/Button";
+
 import styles from "../styles/pages/login.module.scss";
 
 function Login() {
@@ -43,13 +45,11 @@ function Login() {
               <a href="#">Esqueci minha senha!</a>
             </div>
 
-            <button className={styles.button}>
-              boraa!!
-              <div className={styles.icons}>
-                <FiArrowRight />
-                <FiArrowRight />
-              </div>
-            </button>
+            <Button
+              label="boraa!!"
+              icons={[<FiArrowRight />, <FiArrowRight />]}
+              display="block"
+            />
           </form>
 
           <p className={styles.signUp}>
