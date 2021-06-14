@@ -29,13 +29,7 @@ function Login() {
             <Form.Input type="password" name="password" label="sua senha" />
 
             <div className={styles.footer}>
-              <label className={styles.checkbox}>
-                Lembrar de mim
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <span className={styles.checkmark}>
-                  <FiCheck />
-                </span>
-              </label>
+              <Form.Checkbox />
 
               <a href="#">Esqueci minha senha!</a>
             </div>
