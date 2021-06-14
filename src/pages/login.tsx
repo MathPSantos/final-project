@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { FiCheck, FiArrowRight } from "react-icons/fi";
 
+import * as Form from "../components/Forms";
 import { Button } from "../components/Button";
 
 import styles from "../styles/pages/login.module.scss";
@@ -23,15 +24,9 @@ function Login() {
           <p>Feliz em te ver aqui! Preencha seus dados e bora lá!</p>
 
           <form>
-            <div className={styles.formControl}>
-              <label htmlFor="email">seu e-mail</label>
-              <input required type="email" name="email" id="email" />
-            </div>
+            <Form.Input type="email" name="email" label="seu e-mail" />
 
-            <div className={styles.formControl}>
-              <label htmlFor="password">sua senha</label>
-              <input required type="password" name="password" id="password" />
-            </div>
+            <Form.Input type="password" name="password" label="sua senha" />
 
             <div className={styles.footer}>
               <label className={styles.checkbox}>
