@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { Input } from "../../components/Forms";
 import { StepContainer } from "../../components/pages/signUp/StepContainer";
 import { ButtonsFooter } from "../../components/pages/signUp/ButtonsFooter";
@@ -5,6 +7,10 @@ import { ButtonsFooter } from "../../components/pages/signUp/ButtonsFooter";
 function Step1() {
   return (
     <>
+      <Head>
+        <title>Cadastro | indica</title>
+      </Head>
+
       <StepContainer>
         <Input required label="seu nome" name="name" />
 
@@ -28,7 +34,7 @@ function Step1() {
           type="password"
         />
 
-        <ButtonsFooter />
+        <ButtonsFooter previous="/signUp" next="/signUp/step-2" />
       </StepContainer>
     </>
   );
