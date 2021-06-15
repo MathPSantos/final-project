@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
 import { Button } from "../../components/Button";
@@ -21,10 +22,12 @@ function SignUp() {
             cadastro! Vamos lá?
           </h1>
 
-          <Button
-            label="boraaa!"
-            icons={[<FiArrowRight />, <FiArrowRight />]}
-          />
+          <Link href="/signUp/step-1">
+            <Button
+              label="boraaa!"
+              icons={[<FiArrowRight />, <FiArrowRight />]}
+            />
+          </Link>
 
           <p>Etapas do processo de cadastro:</p>
 

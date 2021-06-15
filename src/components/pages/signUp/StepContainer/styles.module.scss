@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  overflow-y: auto;
+
+  margin-left: 4.75rem;
+
+  main {
+    max-width: 1160px;
+    
+    margin: 4rem auto 0;
+    padding: 0 1.5rem 2rem;
+
+    > div {
+      max-width: 620px;
+    }
+  }
+}

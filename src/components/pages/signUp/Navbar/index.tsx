@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 
 export function Navbar() {
   return (
-    <nav className={styles.container}>
+    <nav>
       <div className={styles.content}>
         <Link href="/">
           <img src="/assets/logo.svg" alt="indica." />

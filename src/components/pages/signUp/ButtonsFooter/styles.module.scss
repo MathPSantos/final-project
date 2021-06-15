@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: 2rem;
+
+  button:first-child {
+    height: 2.875rem;
+
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--pink-50);
+    border: none;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background: var(--pink-500);
+
+      svg {
+        color: var(--white);
+      }
+    }
+    
+    svg {
+      width: 26px;
+      height: 26px;
+
+      color: var(--pink-500);
+    }
+  }
+
+  button + button {
+    margin-left: 1rem;
+  }
+}

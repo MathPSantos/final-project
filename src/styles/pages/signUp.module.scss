@@ -1,14 +1,10 @@
 .container {
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 4rem;
 }
 
 .content {
   max-width: 1160px;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 2rem;
   margin: 3rem auto 0;
 
   h1 {
@@ -23,7 +19,7 @@
 
   > p {
     color: var(--purple-200);
-    font: 600 1.25rem 'Open Sans', sans-serif;
+    font: 600 1.25rem "Open Sans", sans-serif;
     margin-top: 32px;
   }
 
