@@ -40,7 +40,7 @@ export default function Home() {
 
         <section>
           <div className={styles.sectionContent}>
-            <img src="" alt="Ilustração" />
+            <img src="/assets/img1.svg" alt="Mais do que uma vitrine de cursos" />
 
             <div>
               <h2>
@@ -70,7 +70,7 @@ export default function Home() {
               </p>
             </div>
 
-            <img src="" alt="Ilustração" />
+            <img src="/assets/img2.svg" alt="As pílulas de cohecimento" />
           </div>
         </section>
 

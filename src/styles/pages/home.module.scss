@@ -43,10 +43,10 @@
   }
 
   p {
-    font: 600 1.25rem 'Open Sans', sans-serif;
+    font: 600 1.25rem "Open Sans", sans-serif;
     line-height: 1.875rem;
     color: var(--purple-200);
-    
+
     margin-top: 1rem;
   }
 
@@ -60,9 +60,15 @@
   margin: 20rem auto 0;
   padding: 0 1.5rem;
 
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 556px 1fr;
+  grid-gap: 3rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   div {
     max-width: 556px;
@@ -82,10 +88,10 @@
     }
 
     p {
-      font: 600 1.25rem 'Open Sans', sans-serif;
+      font: 600 1.25rem "Open Sans", sans-serif;
       line-height: 1.875rem;
       color: var(--purple-200);
-      
+
       margin-top: 1rem;
     }
   }
@@ -101,7 +107,7 @@
   background: var(--white);
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -114,8 +120,6 @@
     transform: rotate(3deg);
     z-index: -1;
   }
-
-  
 }
 
 .bannerContent {
@@ -149,7 +153,7 @@
   p {
     max-width: 478px;
 
-    font: 600 1.25rem 'Open Sans', sans-serif;
+    font: 600 1.25rem "Open Sans", sans-serif;
     line-height: 1.875rem;
     color: var(--purple-200);
 
